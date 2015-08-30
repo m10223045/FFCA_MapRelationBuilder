@@ -17,16 +17,16 @@ public class TEST {
 	
 	public static void text3(){
 		ArrayList<String> testAL = new ArrayList<String>();
-		testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[©b³à]");
-		testAL.add("objects:[d1, d2, d3, d4], attributes:[©b³à, ³¯¤ô«ó]");
-		testAL.add("objects:[d1, d2, d4], attributes:[©b³à, ºÊº», ³¯¤ô«ó]");
-		testAL.add("objects:[d2, d4, d5], attributes:[¥x¥_, ©b³à]");
-		testAL.add("objects:[d2, d4], attributes:[¥x¥_, ©b³à, ºÊº», ³¯¤ô«ó]");
-		testAL.add("objects:[d3], attributes:[©b³à, ©¨¥À, ³¯¤ô«ó]");
-		testAL.add("objects:[], attributes:[¥x¥_, ©b³à, ©¨¥À, ºÊº», ³¯¤ô«ó]");
-		//testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[¦Y¶º]");
-		//testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[ºÎÄ±]");
-		//testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[¦Y¶º, ©b³à, ¥x¥_, ©b³à, ©¨¥À, ³¯¤ô«ó]");
+		testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[å¥”å–ª]");
+		testAL.add("objects:[d1, d2, d3, d4], attributes:[å¥”å–ª, é™³æ°´æ‰]");
+		testAL.add("objects:[d1, d2, d4], attributes:[å¥”å–ª, ç›£ç„, é™³æ°´æ‰]");
+		testAL.add("objects:[d2, d4, d5], attributes:[å°åŒ—, å¥”å–ª]");
+		testAL.add("objects:[d2, d4], attributes:[å°åŒ—, å¥”å–ª, ç›£ç„, é™³æ°´æ‰]");
+		testAL.add("objects:[d3], attributes:[å¥”å–ª, å²³æ¯, é™³æ°´æ‰]");
+		testAL.add("objects:[], attributes:[å°åŒ—, å¥”å–ª, å²³æ¯, ç›£ç„, é™³æ°´æ‰]");
+		//testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[åƒé£¯]");
+		//testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[ç¡è¦º]");
+		//testAL.add("objects:[d1, d2, d3, d4, d5], attributes:[åƒé£¯, å¥”å–ª, å°åŒ—, å¥”å–ª, å²³æ¯, é™³æ°´æ‰]");
 		
 		RelationBuilder rb = new RelationBuilder(testAL);
 		rb.BuildRelation();
@@ -36,7 +36,7 @@ public class TEST {
 	public static void text2(){
 		String s1 = "objects";
 		String s2 = "attributes";
-		String str = "objects:[d1, d2, d3, d4, d5], attributes:[©b³à]";
+		String str = "objects:[d1, d2, d3, d4, d5], attributes:[å¥”å–ª]";
 		System.out.println("object: " + str.indexOf("objects"));
 		System.out.println("object: " + str.indexOf("attributes"));
 		System.out.println("object: [" + str.substring(str.indexOf(s1)+s1.length()+2, str.indexOf(s2)-3) +"]");
